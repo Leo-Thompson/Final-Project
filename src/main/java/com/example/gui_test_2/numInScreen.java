@@ -12,6 +12,7 @@ import java.io.IOException;
 public class numInScreen {
 
     VBox numDisplay = new VBox();
+    Label displayTotal = new Label("");
 
     HelloApplication funcIn = new HelloApplication();
     Button num1 = new Button("1");
@@ -30,7 +31,7 @@ public class numInScreen {
     public VBox keypadDisplay(int numIn) throws IOException{
         int intTotal = numIn;
         String stringTotal = String.valueOf(numIn);
-        Label displayTotal = new Label(stringTotal);
+
 
 
 

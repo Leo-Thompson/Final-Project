@@ -59,7 +59,10 @@ public class HelloApplication extends Application {
     public static String increaseNumberByDigit(String numIn, String totalIn) throws IOException {
         if (numIn != ""){
             totalIn.concat(numIn);
-            numScreen.keypadDisplay(Integer.valueOf(numIn));
+
+
+            numScreen.displayTotal.setText(totalIn.concat(numIn));
+            System.out.println(totalIn.concat(numIn));
 
             return(totalIn);
 
@@ -67,6 +70,19 @@ public class HelloApplication extends Application {
 
         return totalIn;
     }
+
+    public static void plusOrMinus(String typeIn, String totalIn){
+        int numberIn = Integer.valueOf(totalIn);
+        if (typeIn == "-"){
+            numberIn -= 1;
+        }
+        else {
+            numberIn += 1;
+        }
+        numScreen.displayTotal.setText(String.valueOf(numberIn));
+    }
+
+
     public void numberInput(int numIn) throws IOException{
 
 
