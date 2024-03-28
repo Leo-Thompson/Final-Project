@@ -3,6 +3,7 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
@@ -11,9 +12,22 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class Item {
-    String name;
+    static String name = "";
     String barcode;
-    float price;
+    static float price;
+
+
+
+
+
+     public static HBox createBox(){
+         Label displayName = new Label(name);
+         Label displayPrice = new Label(String.valueOf(price));
+
+
+         HBox itemBox = new HBox(displayName, displayPrice);
+         return itemBox;
+     }
 
 
 }

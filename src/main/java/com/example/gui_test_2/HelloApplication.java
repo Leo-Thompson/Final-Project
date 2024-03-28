@@ -6,12 +6,15 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import java.io.IOException;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.*;
 
 
 public class HelloApplication extends Application {
@@ -19,15 +22,20 @@ public class HelloApplication extends Application {
 
 
 
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+
+
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
         stage.setTitle("Hello!");
 
 
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {
@@ -35,13 +43,63 @@ public class HelloApplication extends Application {
     }
 
 
+    public void mainScreen(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("List-Page.fxml"));
+
+
+        Scene scene2 = new Scene(fxmlLoader.load(), 1280, 720);
+        stage.setScene(scene2);
+        stage.show();
+    }
+
+
     public void secondScreen(Stage stage) throws IOException{
+
+
+
         VBox vbox = new VBox(16); // spacing = 8
         HBox row1 = new HBox(10);
         Label confirmation = new Label("");
         row1.getChildren().addAll(new Button("r1 b1"), new Button("r1, b2"));
         vbox.getChildren().addAll(confirmation, row1, new Button("item1"), new Button("item2"), new Button("item3"));
-        Scene scene = new Scene(vbox, 1280, 720);
+
+
+        int i = 0;
+        ArrayList<HBox> testingList = new ArrayList<>();
+
+
+        while(i <20){
+            Item temp = new Item();
+            temp.name = String.valueOf(i);
+            temp.price = i*3;
+            testingList.add((temp.createBox()));
+            i ++;
+        }
+
+        VBox testingBox = new VBox();
+
+        for(HBox element: testingList){
+            testingBox.getChildren().add(element);
+        }
+
+        testingBox.setSpacing(10);
+        testingBox.setMaxHeight(100);
+
+        ScrollPane listTest = new ScrollPane(testingBox);
+        listTest.setVmax(100);
+
+
+
+
+        itemList testItemList = new itemList();
+        testItemList.initialiseListWindow(testingBox);
+
+
+
+
+
+        Scene scene = new Scene(listTest);
+
         stage.setTitle("second screen test");
         EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent ALL)
@@ -54,21 +112,23 @@ public class HelloApplication extends Application {
         stage.show();
 
 
+
+
     }
 
     public static String increaseNumberByDigit(String numIn, String totalIn) throws IOException {
-        if (numIn != ""){
-            totalIn.concat(numIn);
+
+        totalIn.concat(numIn);
 
 
-            numScreen.displayTotal.setText(totalIn.concat(numIn));
-            System.out.println(totalIn.concat(numIn));
+        numScreen.displayTotal.setText(totalIn.concat(numIn));
+        System.out.println(totalIn.concat(numIn));
 
-            return(totalIn);
+        return(totalIn);
 
-        }
 
-        return totalIn;
+
+        
     }
 
     public static void plusOrMinus(String typeIn, String totalIn){
@@ -80,6 +140,14 @@ public class HelloApplication extends Application {
             numberIn += 1;
         }
         numScreen.displayTotal.setText(String.valueOf(numberIn));
+    }
+
+    public static void removeNumber(String totalIn){
+
+        if (totalIn != "") {
+            String modifiedTotal = totalIn.substring(0, totalIn.length() - 1);
+            numScreen.displayTotal.setText(modifiedTotal);
+        }
     }
 
 
