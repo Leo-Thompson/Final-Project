@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.gui_test_2.ListController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <HBox alignment="CENTER">
+        <ScrollPane minWidth="750" minHeight="700">
+
+            <VBox id="ListOfItems">
+
+            </VBox>
+        </ScrollPane>
+        <VBox alignment="CENTER_RIGHT">
+            <VBox.margin>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"></Insets>
+            </VBox.margin>
+            <HBox>
+                <HBox.margin>
+                    <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"></Insets>
+                </HBox.margin>
+                <Button  prefHeight="100" prefWidth="150" wrapText="true" textAlignment="CENTER">
+                    <VBox>
+                        <Label text="image goes here"/>
+                        <Label text="Fruit"/>
+                    </VBox>
+
+                </Button>
+                <Button text="veg" prefHeight="100" prefWidth="150"></Button>
+            </HBox>
+            <HBox>
+                <Button text="Bakery" prefHeight="100" prefWidth="150"></Button>
+                <Button text="Mobile top up" prefHeight="100" prefWidth="150"></Button>
+            </HBox>
+            <HBox>
+                <Button text="Confectionary" prefHeight="100" prefWidth="150"></Button>
+                <Button text="Other" prefHeight="100" prefWidth="150"></Button>
+            </HBox>
+        </VBox>
+
+    </HBox>
+
+</AnchorPane>

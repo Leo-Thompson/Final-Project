@@ -44,11 +44,12 @@ public class HelloApplication extends Application {
 
 
     public void mainScreen(Stage stage) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("List-Page.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("List-View.fxml"));
 
 
         Scene scene2 = new Scene(fxmlLoader.load(), 1280, 720);
         stage.setScene(scene2);
+        stage.setTitle("main screen");
         stage.show();
     }
 
