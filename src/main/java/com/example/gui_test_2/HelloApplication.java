@@ -10,6 +10,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -42,12 +43,24 @@ public class HelloApplication extends Application {
         launch();
     }
 
+    public static void changeButtonFont(String id, double size, Scene scene){
+        Button toBeChanged = (Button) scene.lookup("#"+id);
+        toBeChanged.setFont(new Font(20));
+    }
+
 
     public void mainScreen(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("List-View.fxml"));
 
 
         Scene scene2 = new Scene(fxmlLoader.load(), 1280, 720);
+        changeButtonFont("FruitButton", 24, scene2);
+        changeButtonFont("VegButton", 24, scene2);
+        changeButtonFont("BakeryButton", 24, scene2);
+        changeButtonFont("MobileButton", 24, scene2);
+        changeButtonFont("ConfectionaryButton", 24, scene2);
+        changeButtonFont("OtherButton", 24, scene2);
+
         stage.setScene(scene2);
         stage.setTitle("main screen");
         stage.show();
