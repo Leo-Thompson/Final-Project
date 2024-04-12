@@ -7,11 +7,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import javafx.scene.paint.*;
 
 import java.io.IOException;
 import java.net.URL;
@@ -60,6 +63,8 @@ public class HelloApplication extends Application {
         changeButtonFont("MobileButton", 24, scene2);
         changeButtonFont("ConfectionaryButton", 24, scene2);
         changeButtonFont("OtherButton", 24, scene2);
+
+
 
         stage.setScene(scene2);
         stage.setTitle("main screen");

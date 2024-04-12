@@ -16,10 +16,11 @@
             prefHeight="1280.0" prefWidth="720.0">
 
     <HBox alignment="BOTTOM_CENTER" spacing="30">
-        <ScrollPane minWidth="600" minHeight="700" border="">
 
-            <VBox id="ListOfItems">
+        <ScrollPane minWidth="600" minHeight="700" id="ListScroll">
 
+            <VBox id="ListOfItems" fillWidth="true">
+               <Label text="greg"/>
             </VBox>
         </ScrollPane>
         <VBox alignment="BOTTOM_RIGHT" spacing="30">
@@ -30,8 +31,8 @@
                 <HBox.margin>
                     <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"></Insets>
                 </HBox.margin>
-                <Button id="FruitButton" prefHeight="125" prefWidth="250" wrapText="true" textAlignment="CENTER" text="Fruit"></Button>
-                <Button id="VegButton" text="veg" prefHeight="125" prefWidth="250"></Button>
+                <Button id="FruitButton" prefHeight="125" prefWidth="250" text="Fruit" onAction="#onFruitButtonClick"></Button>
+                <Button id="VegButton" text="veg" prefHeight="125" prefWidth="250" onAction="#onVegButtonClick"></Button>
             </HBox>
             <HBox spacing="30">
                 <Button id="BakeryButton" text="Bakery" prefHeight="125" prefWidth="250"></Button>
