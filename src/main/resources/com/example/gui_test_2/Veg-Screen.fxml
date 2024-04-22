@@ -12,6 +12,10 @@
             prefHeight="400.0" prefWidth="600.0">
 
     <VBox spacing="30">
+        <HBox spacing="1000">
+            <Label text="date and time placeholder"/>
+            <Button text="Menu" prefHeight="50" prefWidth="50"/>
+        </HBox>
         <HBox spacing="30">
             <Button text="Red Onion Loose" prefWidth="100" prefHeight="100"/>
             <Button text="Onion" prefWidth="100" prefHeight="100"/>
