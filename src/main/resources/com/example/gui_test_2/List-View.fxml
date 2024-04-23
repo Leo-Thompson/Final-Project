@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.Font.*?>
 
-
-
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.gui_test_2.ListController"
-            prefHeight="1280.0" prefWidth="720.0">
+<AnchorPane prefHeight="1280.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_test_2.ListController">
     <VBox spacing="20">
     <HBox spacing="1000">
-        <Label text="date and time placeholder"/>
-        <Button text="Menu" prefHeight="50" prefWidth="50"/>
+        <Label text="date and time placeholder" />
+        <Button prefHeight="50" prefWidth="50" text="Menu" />
     </HBox>
 
     <HBox alignment="BOTTOM_CENTER" spacing="30">
 
-        <ScrollPane minWidth="600" id="ListScroll" style="-fx-background-color: black" vbarPolicy="ALWAYS">
+        <ScrollPane id="ListScroll" minWidth="600" pannable="true" style="-fx-background-color: black" vbarPolicy="ALWAYS">
             <content>
 
-                <VBox id="ListOfItems" spacing="300" style="-fx-background-color: gray">
-                    <Label text="greg"/>
-                    <Label text="greg"/>
-                    <Label text="greg"/>
-                    <Label text="greg"/>
-                    <Label text="greg"/>
-                    <Label text="greg"/>
-                    <Label text="greg"/>
+                <VBox id="ListOfItems" spacing="300" style="-fx-background-color: #c2c2c2;">
+                    <Label text="greg" />
+                    <Label text="greg" />
+                    <Label text="greg" />
+                    <Label text="greg" />
+                    <Label text="greg" />
+                    <Label text="greg" />
+                    <Label text="greg" />
 
 
 
@@ -42,22 +33,22 @@
         </ScrollPane>
         <VBox alignment="BOTTOM_RIGHT" spacing="30">
             <VBox.margin>
-                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"></Insets>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
             </VBox.margin>
             <HBox spacing="30">
                 <HBox.margin>
-                    <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"></Insets>
+                    <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
                 </HBox.margin>
-                <Button id="FruitButton" prefHeight="125" prefWidth="250" text="Fruit" onAction="#onFruitButtonClick"></Button>
-                <Button id="VegButton" text="veg" prefHeight="125" prefWidth="250" onAction="#onVegButtonClick"></Button>
+                <Button id="FruitButton" onAction="#onFruitButtonClick" prefHeight="125" prefWidth="250" text="Fruit" />
+                <Button id="VegButton" onAction="#onVegButtonClick" prefHeight="125" prefWidth="250" text="veg" />
             </HBox>
             <HBox spacing="30">
-                <Button id="BakeryButton" text="Bakery" prefHeight="125" prefWidth="250"></Button>
-                <Button id="MobileButton" text="Mobile top up" prefHeight="125" prefWidth="250"></Button>
+                <Button id="BakeryButton" prefHeight="125" prefWidth="250" text="Bakery" />
+                <Button id="MobileButton" prefHeight="125" prefWidth="250" text="Mobile top up" />
             </HBox>
             <HBox spacing="30">
-                <Button id="ConfectionaryButton" text="Confectionary" prefHeight="125" prefWidth="250"></Button>
-                <Button id="OtherButton" text="Other" prefHeight="125" prefWidth="250"></Button>
+                <Button id="ConfectionaryButton" prefHeight="125" prefWidth="250" text="Confectionary" />
+                <Button id="OtherButton" prefHeight="125" prefWidth="250" text="Other" />
             </HBox>
         </VBox>
 
