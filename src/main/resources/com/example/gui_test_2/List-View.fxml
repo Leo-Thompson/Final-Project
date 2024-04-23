@@ -13,7 +13,7 @@
 
     <HBox alignment="BOTTOM_CENTER" spacing="30">
 
-        <ScrollPane id="ListScroll" minWidth="600" pannable="true" style="-fx-background-color: black" vbarPolicy="ALWAYS">
+        <ScrollPane id="ListScroll" prefHeight="700" minWidth="600" style="-fx-background-color: black" vbarPolicy="ALWAYS">
             <content>
 
                 <VBox id="ListOfItems" spacing="300" style="-fx-background-color: #c2c2c2;">
