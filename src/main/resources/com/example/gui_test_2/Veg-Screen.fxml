@@ -1,32 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.gui_test_2.VegScreen"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_test_2.VegScreen">
 
     <VBox spacing="30">
         <HBox spacing="1000">
-            <Label text="date and time placeholder"/>
-            <Button text="Menu" prefHeight="50" prefWidth="50"/>
+            <Label text="date and time placeholder" />
+            <Button prefHeight="50" prefWidth="50" text="Menu" />
+        </HBox>
+        <Button id="closeButton" onMouseClicked="#handleCloseButtonAction" text="Close menu" />
+        <HBox spacing="30">
+            <Button prefHeight="200.0" prefWidth="200.0" text="Red Onion Loose">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" text="Onion">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" text="Carrot">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" text="Parsnip">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" text="Cucumber">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
         </HBox>
         <HBox spacing="30">
-            <Button text="Red Onion Loose" prefWidth="100" prefHeight="100"/>
-            <Button text="Onion" prefWidth="100" prefHeight="100"/>
-            <Button text="Carrot" prefWidth="100" prefHeight="100"/>
-            <Button text="Parsnip" prefWidth="100" prefHeight="100"/>
-            <Button text="Cucumber" prefWidth="100" prefHeight="100"/>
-        </HBox>
-        <HBox spacing="30">
-            <Button text="Courgette" prefWidth="100" prefHeight="100"/>
-            <Button text="Aubergine" prefWidth="100" prefHeight="100"/>
-            <Button text="Swede" prefWidth="100" prefHeight="100"/>
+            <Button prefHeight="200.0" prefWidth="200.0" text="Courgette">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" text="Aubergine">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" text="Swede">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
         </HBox>
     </VBox>
 
