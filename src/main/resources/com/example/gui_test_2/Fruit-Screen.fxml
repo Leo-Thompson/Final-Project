@@ -1,33 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.gui_test_2.FruitScreen"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_test_2.FruitScreen">
 
     <VBox spacing="30">
         <HBox spacing="1000">
-            <Label text="date and time placeholder"/>
-            <Button text="Menu" prefHeight="50" prefWidth="50"/>
+            <Label style="-fx-background-color: #48c0e8;" text="date and time placeholder" />
+            <Button prefHeight="50" prefWidth="69.0" style="-fx-background-color: #48c0e8;" text="Menu">
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font></Button>
         </HBox>
         <HBox spacing="30">
-            <Button text="Apple" prefWidth="100" prefHeight="100"/>
-            <Button text="Orange" prefWidth="100" prefHeight="100"/>
-            <Button text="Pear" prefWidth="100" prefHeight="100"/>
-            <Button text="Red Grapefruit" prefWidth="100" prefHeight="100"/>
-            <Button text="Bananas loose" prefWidth="100" prefHeight="100"/>
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8;" text="Apple">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: #000000;" text="Orange">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: #000000;" text="Pear">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: #000000;" text="Red Grapefruit">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: #000000;" text="Bananas loose">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
         </HBox>
         <HBox spacing="30">
-            <Button text="Pineapple" prefWidth="100" prefHeight="100"/>
-            <Button text="Lemons" prefWidth="100" prefHeight="100"/>
-            <Button text="Limes" prefWidth="100" prefHeight="100"/>
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8;" text="Pineapple">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: #000000;" text="Lemons">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: #000000;" text="Limes">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
         </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="62.0" style="-fx-background-radius: 100; -fx-background-color: #48c0e8; -fx-border-color: #000000; -fx-border-radius: 100;" text="&lt;-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label text="1 / 1">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="552.0" layoutY="34.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="62.0" style="-fx-background-radius: 100; -fx-background-color: #48c0e8; -fx-border-color: #000000; -fx-border-radius: 100;" text="-&gt;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
     </VBox>
 
 </AnchorPane>

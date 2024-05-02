@@ -3,26 +3,51 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="1280.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_test_2.ListController">
     <VBox spacing="20">
-    <HBox spacing="1000">
-        <Label text="date and time placeholder" />
-        <Button prefHeight="50" prefWidth="50" text="Menu" />
+    <HBox prefHeight="67.0" prefWidth="1190.0" spacing="900.0">
+        <Label prefHeight="21.0" prefWidth="229.0" text="date and time placeholder">
+            <font>
+               <Font size="15.0" />
+            </font></Label>
+        <Button prefHeight="67.0" prefWidth="155.0" style="-fx-background-color: #48c0e8;" text="Menu">
+            <font>
+               <Font size="22.0" />
+            </font></Button>
     </HBox>
 
     <HBox alignment="BOTTOM_CENTER" spacing="30">
 
-        <ScrollPane id="ListScroll" prefHeight="700" minWidth="600" style="-fx-background-color: black" vbarPolicy="ALWAYS">
+        <ScrollPane id="ListScroll" minWidth="600" prefHeight="700" style="-fx-background-color: black" vbarPolicy="ALWAYS">
             <content>
 
-                <VBox id="ListOfItems" spacing="300" style="-fx-background-color: #c2c2c2;">
-                    <Label text="greg" />
-                    <Label text="greg" />
-                    <Label text="greg" />
-                    <Label text="greg" />
-                    <Label text="greg" />
-                    <Label text="greg" />
+                <VBox id="ListOfItems" spacing="30.0" style="-fx-background-color: #c2c2c2;">
+                    <Label text="Example product ">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                    <Label text="Example product ">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                    <Label text="Example product ">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                    <Label text="Example product ">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                    <Label text="Example product ">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                    <Label text="Example product ">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
                     <Label text="greg" />
 
 
@@ -39,20 +64,65 @@
                 <HBox.margin>
                     <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
                 </HBox.margin>
-                <Button id="FruitButton" onAction="#onFruitButtonClick" prefHeight="125" prefWidth="250" text="Fruit" />
-                <Button id="VegButton" onAction="#onVegButtonClick" prefHeight="125" prefWidth="250" text="veg" />
+                <Button id="FruitButton" onAction="#onFruitButtonClick" prefHeight="125" prefWidth="250" style="-fx-background-color: #48c0e8; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Fruit">
+                  <font>
+                     <Font size="25.0" />
+                  </font></Button>
+                <Button id="VegButton" onAction="#onVegButtonClick" prefHeight="125" prefWidth="250" style="-fx-background-color: #48c0e8; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Veg">
+                  <font>
+                     <Font size="25.0" />
+                  </font></Button>
             </HBox>
             <HBox spacing="30">
-                <Button id="BakeryButton" prefHeight="125" prefWidth="250" text="Bakery" />
-                <Button id="MobileButton" prefHeight="125" prefWidth="250" text="Mobile top up" />
+                <Button id="BakeryButton" prefHeight="125" prefWidth="250" style="-fx-background-color: #48c0e8; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Bakery">
+                  <font>
+                     <Font size="25.0" />
+                  </font></Button>
+                <Button id="MobileButton" prefHeight="125" prefWidth="250" style="-fx-background-color: #48c0e8; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Mobile top up">
+                  <font>
+                     <Font size="25.0" />
+                  </font></Button>
             </HBox>
             <HBox spacing="30">
-                <Button id="ConfectionaryButton" prefHeight="125" prefWidth="250" text="Confectionary" />
-                <Button id="OtherButton" prefHeight="125" prefWidth="250" text="Other" />
+                <Button id="ConfectionaryButton" prefHeight="125" prefWidth="250" style="-fx-background-color: #48c0e8; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Confectionary">
+                  <font>
+                     <Font size="25.0" />
+                  </font></Button>
+                <Button id="OtherButton" prefHeight="125" prefWidth="250" style="-fx-background-color: #48c0e8; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Other">
+                  <font>
+                     <Font size="25.0" />
+                  </font></Button>
             </HBox>
         </VBox>
 
     </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="623.0" spacing="30.0">
+               <children>
+                  <Label style="-fx-border-color: #000000; -fx-background-color: #4af700;" text="Savings: £0.00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-border-color: black;" text="Total: £0.00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="566.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="120.0" style="-fx-background-color: #48c0e8; -fx-background-radius: 50; -fx-border-color: #000000; -fx-border-radius: 50;" text="Button">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
     </VBox>
 
 </AnchorPane>
