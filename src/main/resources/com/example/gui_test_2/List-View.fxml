@@ -24,30 +24,60 @@
             <content>
 
                 <VBox id="ListOfItems" spacing="30.0" style="-fx-background-color: #c2c2c2;">
-                    <Label text="Example product ">
-                     <font>
-                        <Font size="19.0" />
-                     </font></Label>
-                    <Label text="Example product ">
-                     <font>
-                        <Font size="19.0" />
-                     </font></Label>
-                    <Label text="Example product ">
-                     <font>
-                        <Font size="19.0" />
-                     </font></Label>
-                    <Label text="Example product ">
-                     <font>
-                        <Font size="19.0" />
-                     </font></Label>
-                    <Label text="Example product ">
-                     <font>
-                        <Font size="19.0" />
-                     </font></Label>
-                    <Label text="Example product ">
-                     <font>
-                        <Font size="19.0" />
-                     </font></Label>
+                  <HBox prefHeight="100.0" prefWidth="587.0" style="-fx-border-color: black;">
+                     <children>
+                          <Label text="Example product ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+                     <children>
+                          <Label text="Example product ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+                     <children>
+                          <Label text="Example product ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+                     <children>
+                          <Label text="Example product ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+                     <children>
+                          <Label text="Example product ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+                     <children>
+                          <Label text="Example product ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
                     <Label text="greg" />
 
 
@@ -114,10 +144,13 @@
             </VBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="566.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="120.0" style="-fx-background-color: #48c0e8; -fx-background-radius: 50; -fx-border-color: #000000; -fx-border-radius: 50;" text="Button">
+                  <Button id="PayButton" mnemonicParsing="false" prefHeight="70.0" prefWidth="120.0" style="-fx-background-color: #48c0e8; -fx-background-radius: 50; -fx-border-color: #000000; -fx-border-radius: 50;" text="Pay">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
                   </Button>
                </children>
             </HBox>
