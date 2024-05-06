@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="1280.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_test_2.ListController">
+<AnchorPane prefHeight="1009.0" prefWidth="1186.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_test_2.ListController">
     <VBox spacing="20">
     <HBox prefHeight="67.0" prefWidth="1190.0" spacing="900.0">
         <Label prefHeight="21.0" prefWidth="229.0" text="date and time placeholder">
@@ -16,6 +16,9 @@
             <font>
                <Font size="22.0" />
             </font></Button>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
     </HBox>
 
     <HBox alignment="BOTTOM_CENTER" spacing="30">
@@ -24,9 +27,14 @@
             <content>
 
                 <VBox id="ListOfItems" spacing="30.0" style="-fx-background-color: #c2c2c2;">
-                  <HBox prefHeight="100.0" prefWidth="587.0" style="-fx-border-color: black;">
+                  <HBox prefHeight="100.0" prefWidth="587.0" spacing="200.0" style="-fx-border-color: black;">
                      <children>
                           <Label text="Example product ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="11.0" layoutY="11.0" text="£9.99">
                            <font>
                               <Font size="19.0" />
                            </font>
@@ -42,9 +50,14 @@
                         </Label>
                      </children>
                   </HBox>
-                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="200.0" style="-fx-border-color: black;">
                      <children>
                           <Label text="Example product ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="11.0" layoutY="11.0" style="-fx-background-color: #4af700;" text="Was £5.00      Now £2.50">
                            <font>
                               <Font size="19.0" />
                            </font>
@@ -86,7 +99,7 @@
 
             </content>
         </ScrollPane>
-        <VBox alignment="BOTTOM_RIGHT" spacing="30">
+        <VBox alignment="BOTTOM_RIGHT" spacing="30" style="-fx-border-color: #cfcecc;">
             <VBox.margin>
                 <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
             </VBox.margin>
@@ -126,7 +139,7 @@
         </VBox>
 
     </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #cfcecc;">
          <children>
             <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="623.0" spacing="30.0">
                <children>
@@ -144,7 +157,7 @@
             </VBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="566.0">
                <children>
-                  <Button id="PayButton" mnemonicParsing="false" prefHeight="70.0" prefWidth="120.0" style="-fx-background-color: #48c0e8; -fx-background-radius: 50; -fx-border-color: #000000; -fx-border-radius: 50;" text="Pay">
+                  <Button id="PayButton" mnemonicParsing="false" onAction="#onPayButtonClick" prefHeight="70.0" prefWidth="120.0" style="-fx-background-color: #48c0e8; -fx-background-radius: 50; -fx-border-color: #000000; -fx-border-radius: 50;" text="Pay">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>

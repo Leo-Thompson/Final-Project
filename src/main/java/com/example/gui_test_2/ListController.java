@@ -32,5 +32,15 @@ public class ListController {
         vegStage.setScene(vegScene);
         vegStage.show();
 
+
+    }
+    @FXML
+    protected void onPayButtonClick() throws IOException{
+        FXMLLoader payFXML = new FXMLLoader(getClass().getResource("PayScreen.fxml"));
+        Scene payScene = new Scene(payFXML.load() , 1280, 720);
+        Stage payStage = new Stage();
+        payStage.setTitle("PAY");
+        payStage.setScene(payScene);
+        payStage.show();
     }
 }

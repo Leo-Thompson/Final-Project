@@ -56,7 +56,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("List-View.fxml"));
 
 
-        Scene scene2 = new Scene(fxmlLoader.load(), 1280, 720);
+        Scene scene2 = new Scene(fxmlLoader.load(), 1280, 800);
         changeButtonFont("FruitButton", 24, scene2);
         changeButtonFont("VegButton", 24, scene2);
         changeButtonFont("BakeryButton", 24, scene2);
@@ -176,7 +176,7 @@ public class HelloApplication extends Application {
         Scene inputScene = new Scene(numScreen.keypadDisplay(numIn), 1280, 720);
         Stage numberScreen = new Stage();
         numberScreen.setScene(inputScene);
-        numberScreen.show();
+       // numberScreen.show();
     }
 
     public void displayNumPad() throws IOException{
