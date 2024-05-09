@@ -7,44 +7,44 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_test_2.VegScreen">
 
     <VBox spacing="30">
-        <Button id="close"/>
+        <Button id="close" />
         <HBox spacing="1000">
-            <Label text="date and time placeholder" />
-            <Button prefHeight="50" prefWidth="50" text="Menu" />
+            <Label style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="date and time placeholder" />
+            <Button prefHeight="50" prefWidth="50" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Menu" />
         </HBox>
-        <Button id="closeButton" onMouseClicked="#handleCloseButtonAction" text="Close menu" />
+        <Button id="closeButton" onMouseClicked="#handleCloseButtonAction" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Close menu" />
         <HBox spacing="30">
-            <Button prefHeight="200.0" prefWidth="200.0" text="Red Onion Loose">
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Red Onion Loose">
             <font>
                <Font size="24.0" />
             </font></Button>
-            <Button prefHeight="200.0" prefWidth="200.0" text="Onion">
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Onion">
             <font>
                <Font size="24.0" />
             </font></Button>
-            <Button prefHeight="200.0" prefWidth="200.0" text="Carrot">
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Carrot">
             <font>
                <Font size="24.0" />
             </font></Button>
-            <Button prefHeight="200.0" prefWidth="200.0" text="Parsnip">
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Parsnip">
             <font>
                <Font size="24.0" />
             </font></Button>
-            <Button prefHeight="200.0" prefWidth="200.0" text="Cucumber">
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Cucumber">
             <font>
                <Font size="24.0" />
             </font></Button>
         </HBox>
         <HBox spacing="30">
-            <Button prefHeight="200.0" prefWidth="200.0" text="Courgette">
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Courgette">
             <font>
                <Font size="24.0" />
             </font></Button>
-            <Button prefHeight="200.0" prefWidth="200.0" text="Aubergine">
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Aubergine">
             <font>
                <Font size="24.0" />
             </font></Button>
-            <Button prefHeight="200.0" prefWidth="200.0" text="Swede">
+            <Button prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #48c0e8; -fx-border-color: black;" text="Swede">
             <font>
                <Font size="24.0" />
             </font></Button>
